@@ -90,7 +90,7 @@ public class KafkaListener {
 			return mConsumer;
 		}
 		Properties properties = new Properties();
-		properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.178.20:9092");
+		properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.178.39:9092");
 		properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 		properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 		properties.put(ConsumerConfig.GROUP_ID_CONFIG, "my-first-consumer-group");
@@ -106,7 +106,7 @@ public class KafkaListener {
 			return mProducer;
 		}
 		Properties props = new Properties();
-		props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.178.20:9092");
+		props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.178.39:9092");
 		props.put(ProducerConfig.CLIENT_ID_CONFIG, "test2");
 		props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());
 		props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
